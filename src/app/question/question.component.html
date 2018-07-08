@@ -1,0 +1,7 @@
+<div [id]='questionProp.id'>{{questionProp.text}}
+    <span *ngFor='let a of questionProp.answerList'>
+      <label> Answer number {{a.id}}
+        <input type="checkbox" [id]='a.id'>
+      </label>    
+    </span>
+</div>
